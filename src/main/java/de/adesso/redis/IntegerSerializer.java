@@ -3,7 +3,7 @@ package de.adesso.redis;
 import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.SerializationException;
 
-final class IntegerSerializer implements
+public class IntegerSerializer implements
 		RedisSerializer<Integer> {
 	@Override
 	public byte[] serialize(Integer value)
